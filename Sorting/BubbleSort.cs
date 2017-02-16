@@ -21,6 +21,14 @@ namespace Sorting
 
         public T[] Sort(T[] items)
         {
+            if (items == null)
+            {
+                throw new ArgumentNullException("input value cannot be null");
+            }
+            if (items.Length == 0 )
+            {
+                throw new ArgumentException("input collection should have atleast one value ");
+            }
             bool swapped;
             T[] sortedItem = new T[items.Length - 1];
             ValueSwaper<T> swapper = new ValueSwaper<T>();
