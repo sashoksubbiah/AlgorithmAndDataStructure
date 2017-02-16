@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sorting
 {
-   public class ValueSwaper<T>
+   public  class ValueSwaper<T>
     {
-        public T[] Swap(T[] items , int left , int right)
+        public  T[] Swap( T[] items , int left , int right)
         {
             if (left != right)
             {

@@ -10,9 +10,9 @@ namespace Sorting.Test
         public void InsertionSort_With_Valid_Input_Set()
         {
             InsertionSort<int> InsertionSort = new InsertionSort<int>();
-            int[] unsortedArray = { 3, 4, 8, 9, 6, 2, 1, 7, 5 };
+            int[] unsortedArray = { 3, 4, 8, 9, 6, 2, 1, 7, 5 ,11,13,12,19};
             var actual = InsertionSort.Sort(unsortedArray);
-            int[] expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9 ,11,12,13,19};
             CollectionAssert.AreEqual(expected, actual);
         }
 
